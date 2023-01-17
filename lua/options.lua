@@ -3,6 +3,7 @@ vim.g.loaded_netrw = 1
 vim.g.splitright = true
 vim.g.loaded_netrwPlugin = 1
 vim.g.rainbow_active = 1
+vim.g.blamer_enabled = 1
 
 -- 'Option' values
 vim.o.incsearch = true
@@ -12,5 +13,4 @@ vim.o.splitright = true
 vim.o.showmode = false
 vim.o.cursorline = true
 vim.o.splitright = true
--- 'Strongly advised' options from nvim-tree plugin
 vim.o.termguicolors = true

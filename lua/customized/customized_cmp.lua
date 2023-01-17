@@ -53,7 +53,8 @@ cmp.setup({
 	sources = cmp.config.sources({
 		{ name = "npm", keyword_length = 4 },
 		{ name = "nvim_lsp" },
-		{ name = "vsnip" }, -- For vsnip users.
+		{ name = "luasnip" },
+		-- { name = "vsnip" }, -- For vsnip users.
 		-- { name = 'ultisnips' }, -- For ultisnips users.
 		-- { name = 'snippy' }, -- For snippy users.
 	}, {
@@ -100,16 +101,3 @@ require("mason-lspconfig").setup_handlers({
 	end,
 })
 
--- Set color overrides for vim cmp
-vim.cmd("highlight CmpItemKindFunction guibg=NONE guifg=#b385dd")
-vim.cmd("highlight CmpItemKindProperty guibg=NONE guifg=#b385dd")
-vim.cmd("highlight CmpItemKindField guibg=NONE guifg=#b385dd")
-vim.cmd("highlight CmpItemKindSnippet guibg=NONE guifg=#b385dd")
-vim.cmd("highlight CmpItemKindText guibg=NONE guifg=#b385dd")
-vim.cmd("highlight CmpItemKindKeyword guibg=NONE guifg=#b385dd")
-vim.cmd("highlight CmpItemKindEnum guibg=NONE guifg=#b385dd")
-vim.cmd("highlight CmpItemKindMethod guibg=NONE guifg=#b385dd")
-vim.cmd("highlight CmpItemKindConstant guibg=NONE guifg=#b385dd")
-vim.cmd("highlight CmpItemKindVariable guibg=NONE guifg=#b385dd")
-
-vim.cmd("highlight CmpItemMenu guibg=NONE guifg=#898989")

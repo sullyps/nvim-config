@@ -27,12 +27,12 @@ map("n", "J", "5j", opts)
 map("v", "J", "5j", opts)
 
 -- Jump buffers
-map("n", "H", ":bprevious<CR>", opts)
-map("n", "L", ":bnext<CR>", opts)
+map("n", "H", "<Plug>(cokeline-focus-prev)<CR>", opts)
+map("n", "L", "<Plug>(cokeline-focus-next)<CR>", opts)
 
 -- Jump windows
 map("n", "<C-h>", "<C-w><Left>", opts)
 map("n", "<C-l>", "<C-w><Right>", opts)
 
--- Clear word search lighlights
+-- Clear word search highlights
 map("n", "<Escape>", ":noh<CR>", opts)
