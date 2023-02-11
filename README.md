@@ -1,9 +1,10 @@
 # Sully's Neovim configuration
 
-I'll add more as a description here at some point, but it's always going to be a work in progress.
+I'll add a better description here at some point, but it's always going to be a work in progress.
 
 ## TODO
-- [ ] Finish lspsaga support
+- [ ] Find a better way to manage themes & color overrides (specifically color overrides)
+- [X] Finish lspsaga support
 - [ ] Customize the netrw menu
 - [ ] Find a good easymotions-like plugin (jump via character match instead of line number)
 - [X] Fix bug with GitSigns sidebar where gitsign characters have different background highlight than normal background

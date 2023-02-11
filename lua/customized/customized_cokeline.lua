@@ -123,23 +123,11 @@ require("cokeline").setup({
 		max_buffer_width = 30,
 	},
 
-	--[[
-  default_hl = {
-    fg = function(buffer)
-      return
-        buffer.is_focused
-        and get_hex('Normal', 'fg')
-         or get_hex('Comment', 'fg')
-    end,
-    bg = get_hex('ColorColumn', 'bg'),
-    --]]
-
 	default_hl = {
-		fg = "#ffffff",
 		bg = function(buffer)
 			if not buffer.is_focused then
-				--return "#393939"
-				return "#262626"
+				-- return "#393939" -- For gray color
+				return "#1c0e38"
 			end
 		end,
 	},

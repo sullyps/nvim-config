@@ -2,8 +2,8 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 vim.g.mapleader = " " -- The elite leader key..
 
--- Exit vim (save and quit)
-map("n", "<Leader>q", ":wq<CR>", opts)
+-- Exit vim (save and quit all)
+map("n", "<Leader>q", ":wqa<CR>", opts)
 
 -- Save current file (don't quit)
 map("n", "<Leader>s", ":w<CR>", opts)
@@ -16,6 +16,12 @@ map("n", "<Leader>c", ":bd<CR>", opts)
 
 -- Open find files pane
 map("n", "<Leader>ff", ":Telescope find_files<CR>", opts)
+
+-- Goto definition
+map("n","gd", "<cmd>Lspsaga goto_definition<CR>", opts)
+
+-- Peek definition
+map("n","gp", "<cmd>Lspsaga peek_definition<CR>", opts)
 
 -- Format the current file
 map("n", "<Leader>fo", ":Format<CR>", opts)

@@ -6,7 +6,8 @@ local lualine = require("lualine")
 -- Color table for highlights
 -- stylua: ignore
 local colors = {
-  bg       = '#202328',
+  -- bg       = '#202328', -- Gray background scheme for solid backgrounds
+  bg = '#1c0e38',
   fg       = '#bbc2cf',
   yellow   = '#ECBE7B',
   cyan     = '#008080',
@@ -199,8 +200,7 @@ ins_right({
 
 ins_right({
 	"diff",
-	-- Is it me or the symbol for modified us really weird
-	symbols = { added = " ", modified = "柳 ", removed = " " },
+	symbols = { added = " ", modified = " ", removed = " " },
 	diff_color = {
 		added = { fg = colors.green },
 		modified = { fg = colors.orange },
