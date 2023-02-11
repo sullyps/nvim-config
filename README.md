@@ -1,6 +1,13 @@
 # Sully's Neovim configuration
 
-I'll add a better description here at some point, but it's always going to be a work in progress.
+It's always a work in progress.
+
+## Showcase
+![Normal editor](https://cdn.discordapp.com/attachments/830634208803160125/1073807313254744127/image.png)
+
+![File explorer](https://cdn.discordapp.com/attachments/830634208803160125/1073807615043317861/image.png)
+
+![Fuzzy finder](https://cdn.discordapp.com/attachments/830634208803160125/1073807716147015802/image.png)
 
 ## TODO
 - [ ] Find a better way to manage themes & color overrides (specifically color overrides)
