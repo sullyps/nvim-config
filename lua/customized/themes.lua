@@ -49,7 +49,7 @@ vim.cmd("highlight CmpItemKindVariable guibg=NONE guifg=#b385dd")
 vim.cmd("highlight CmpItemKindClass guibg=NONE guifg=#b385dd")
 vim.cmd("highlight CmpItemKindModule guibg=NONE guifg=#b385dd")
 vim.cmd("highlight CmpItemMenu guibg=NONE guifg=#898989")
-
+vim.cmd("hi ColorColumn guibg=#ffffff")
 -- Popup menu settings
 vim.cmd("set pumblend=15") -- 15% transparency
 vim.cmd("highlight PMenu guibg=#282828")

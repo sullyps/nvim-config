@@ -9,4 +9,3 @@ require('keymaps')
 -- Import packer plugins from plugins module
 require('plugins')
 
-vim.cmd("hi ColorColumn guibg=#ffffff")
