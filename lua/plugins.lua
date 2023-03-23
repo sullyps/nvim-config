@@ -36,6 +36,7 @@ packer.startup(function(use)
 	use("noib3/nvim-cokeline")
 
 	-- Misc
+	use("steelsojka/pears.nvim")
 	use("nvim-lua/plenary.nvim")
 	use("nvim-telescope/telescope.nvim")
 	use("nvim-telescope/telescope-file-browser.nvim")
@@ -43,7 +44,6 @@ packer.startup(function(use)
 	use("mfussenegger/nvim-dap")
 	use("mfussenegger/nvim-lint")
 	use("nvim-tree/nvim-tree.lua")
-	use("cohama/lexima.vim")
 	use("nvim-tree/nvim-web-devicons")
 	use("lewis6991/gitsigns.nvim")
 	use("APZelos/blamer.nvim")
@@ -61,6 +61,8 @@ packer.startup(function(use)
 			ts_update()
 		end,
 	})
+
+	use("habamax/vim-godot")
 end)
 -- Require customized plugin configurations
 require("customized/customized_formatter")
@@ -73,6 +75,8 @@ require("customized/customized_lspsignature")
 -- Because I have different preferences for different themes, this file contains commented out lists of other themes
 -- alongside the current theme that is being imported
 require("customized/themes")
+
+require("pears").setup()
 
 -- Initalize nvim-tree plugin
 require("nvim-tree").setup()
