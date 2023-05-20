@@ -1,7 +1,11 @@
 -- Enable gruvbox theme
 require("gruvbox").setup({
 	contrast = "hard",
-	italic = false,
+	italic = {
+		strings = false,
+		operators = false,
+		comments = true
+	},
 	transparent_mode = true,
 	overrides = {
 		--[[
