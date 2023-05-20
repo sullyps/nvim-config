@@ -30,12 +30,16 @@ packer.startup(function(use)
 	use("hrsh7th/cmp-nvim-lsp")
 	use("David-Kunz/cmp-npm")
 	use("L3MON4D3/LuaSnip")
+	use("folke/trouble.nvim")
 
 	-- Tabline & status line
 	use("nvim-lualine/lualine.nvim")
 	use("noib3/nvim-cokeline")
 
 	-- Misc
+	use("folke/todo-comments.nvim")
+	use("BurntSushi/ripgrep") -- requirement for todo-comments
+	use("EtiamNullam/deferred-clipboard.nvim")
 	use("steelsojka/pears.nvim")
 	use("nvim-lua/plenary.nvim")
 	use("nvim-telescope/telescope.nvim")
@@ -76,6 +80,8 @@ require("customized/customized_lspsignature")
 -- alongside the current theme that is being imported
 require("customized/themes")
 
+require("todo-comments").setup()
+
 require("pears").setup()
 
 -- Initalize nvim-tree plugin
@@ -87,6 +93,10 @@ require("gitsigns").setup()
 -- Initalize Mason plugin
 require("mason").setup()
 require("mason-lspconfig").setup() -- Creates 'LspInstall' command
+
+require("deferred-clipboard").setup({
+	fallback = 'unnamedplus'
+})
 
 -- Automatically start servers depending on file type, no manual configuration needed
 require("mason-lspconfig").setup_handlers({

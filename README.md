@@ -10,6 +10,8 @@ It's always a work in progress.
 ![Fuzzy finder](https://cdn.discordapp.com/attachments/830634208803160125/1073807716147015802/image.png)
 
 ## TODO
+- [ ] Make an install script
+- [ ] Start using tmux, then remove tab system
 - [ ] Find a better way to manage themes & color overrides (specifically color overrides)
 - [X] Finish lspsaga support
 - [ ] Customize the netrw menu
@@ -20,6 +22,7 @@ It's always a work in progress.
 
 ## Requirements
 - Neovim v0.8.0 (Tested with .deb package installation)
+- [Ripgrep system package](https://github.com/BurntSushi/ripgrep#installation) (This is needed for the todo-comments plugin)
 
 ## Installing (Only tested with .deb neovim install method)
 - Clone repo and move/rename directory to `<YOUR-HOME-PATH>/.config/nvim`

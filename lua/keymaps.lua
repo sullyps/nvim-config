@@ -23,6 +23,9 @@ map("n","gd", "<cmd>Lspsaga goto_definition<CR>", opts)
 -- Peek definition
 map("n","gp", "<cmd>Lspsaga peek_definition<CR>", opts)
 
+-- Toggle error highlight menu
+map("n", "<Leader>t", ":TroubleToggle<CR>", opts)
+
 -- Format the current file
 map("n", "<Leader>fo", ":Format<CR>", opts)
 
@@ -39,6 +42,8 @@ map("n", "L", "<Plug>(cokeline-focus-next)<CR>", opts)
 -- Jump windows
 map("n", "<C-h>", "<C-w><Left>", opts)
 map("n", "<C-l>", "<C-w><Right>", opts)
+map("n", "<C-j>", "<C-w><Down>", opts)
+map("n", "<C-k>", "<C-w><Up>", opts)
 
 -- Clear word search highlights
 map("n", "<Escape>", ":noh<CR>", opts)
