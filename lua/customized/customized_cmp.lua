@@ -11,12 +11,13 @@ local has_words_before = function()
 end
 
 cmp.setup({
+	--[[
 	window = {
 		completion = cmp.config.window.bordered({
 			border = "double",
 			winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Cursorline:PmenuThumb,Search:None"
 		}),
-	},
+	}, --]]
 	--Add the cool lspkind icons
 	formatting = {
 		format = lspkind.cmp_format({

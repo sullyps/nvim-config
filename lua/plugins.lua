@@ -37,6 +37,8 @@ packer.startup(function(use)
 	use("noib3/nvim-cokeline")
 
 	-- Misc
+	use("https://github.com/startup-nvim/startup.nvim")
+	use("folke/neodev.nvim")
 	use("folke/todo-comments.nvim")
 	use("BurntSushi/ripgrep") -- requirement for todo-comments
 	use("EtiamNullam/deferred-clipboard.nvim")
@@ -79,6 +81,8 @@ require("customized/customized_lspsignature")
 -- Because I have different preferences for different themes, this file contains commented out lists of other themes
 -- alongside the current theme that is being imported
 require("customized/themes")
+
+require("neodev").setup()
 
 require("startup").setup(require"customized/customized_startup") -- put theme name here
 

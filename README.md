@@ -24,7 +24,10 @@ It's always a work in progress.
 - Neovim v0.8.0 (Tested with .deb package installation)
 - [Ripgrep system package](https://github.com/BurntSushi/ripgrep#installation) (This is needed for the todo-comments plugin)
 
-- OPTIONAL: [Install Jetbrains Mono Nerd Font](.fonts/)
+## Optional tweaks 
+- [Install Jetbrains Mono Nerd Font](.fonts/)
+- For Kitty terminal theme: run `kitty +kitten theme` and select 'Square' [View the theme here](https://github.com/dexpota/kitty-themes#square)
+- For Alacrity terminal theme: use [this](https://github.com/nyoom-engineering/oxocarbon-alacritty)
 
 ## Installing (Only tested with .deb neovim install method)
 - Clone repo and move/rename directory to `<YOUR-HOME-PATH>/.config/nvim`
@@ -34,6 +37,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 - Open lua/plugins.lua and run excommand `:PackerSync`
+- When prompted by the editor about configuring your work environment, select option 1 (Apply and modify settings)
 - Done!
 
 ## Uninstalling (Only tested with .deb neovim install method)

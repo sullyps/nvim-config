@@ -29,7 +29,6 @@ vim.cmd("hi TelescopeBorder guifg=#ffffff")
 
 -------------- GLOBAL STYLING OPTIONS --------------
 -- Popup menu settings
-vim.cmd("set pumblend=15") -- 15% transparency
 vim.cmd("highlight PMenu guibg=#282828")
 ----------------- KEEP UNCOMMENTED -----------------
 
