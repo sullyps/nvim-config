@@ -80,6 +80,8 @@ require("customized/customized_lspsignature")
 -- alongside the current theme that is being imported
 require("customized/themes")
 
+require("startup").setup(require"customized/customized_startup") -- put theme name here
+
 require("todo-comments").setup()
 
 require("pears").setup()
@@ -107,6 +109,10 @@ require("mason-lspconfig").setup_handlers({
 
 -- Initalize commentstring module on treesitter
 require("nvim-treesitter.configs").setup({
+	auto_install = true,
+	highlight = {
+		enable = true
+	},
 	context_commentstring = {
 		enable = true,
 	},

@@ -1,4 +1,7 @@
--- 'Global' values
+-- Custom install options
+vim.g.using_unity = true
+
+-- External package 'Global' values
 vim.g.loaded_netrw = 1
 vim.g.splitright = true
 vim.g.loaded_netrwPlugin = 1
@@ -6,7 +9,7 @@ vim.g.rainbow_active = 1
 vim.g.blamer_enabled = 1
 vim.g.godot_executable = "/Applications/godot.app/Contents/MacOS/godot"
 
--- 'Option' values
+-- External package 'Option' values
 vim.o.incsearch = true
 vim.o.relativenumber = true
 vim.o.scrolloff = 99999 -- Keep the cursor in the middle when the screen is full of text

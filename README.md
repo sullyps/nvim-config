@@ -11,18 +11,20 @@ It's always a work in progress.
 
 ## TODO
 - [ ] Make an install script
+- [ ] Add extra smart logic for lexima plugin (Ex. Don't create 2 spaces in markdown file when creating checkmark, etc.)
 - [ ] Start using tmux, then remove tab system
 - [ ] Find a better way to manage themes & color overrides (specifically color overrides)
 - [X] Finish lspsaga support
-- [ ] Customize the netrw menu
+- [X] Customize the netrw menu
 - [ ] Find a good easymotions-like plugin (jump via character match instead of line number)
 - [X] Fix bug with GitSigns sidebar where gitsign characters have different background highlight than normal background
 - [ ] Rewrite customized cmp overrides in a better way (currently using a bunch of vim.cmd highlight lines)
-- [ ] Add extra smart logic for lexima plugin (Ex. Don't create 2 spaces in markdown file when creating checkmark, etc.)
 
 ## Requirements
 - Neovim v0.8.0 (Tested with .deb package installation)
 - [Ripgrep system package](https://github.com/BurntSushi/ripgrep#installation) (This is needed for the todo-comments plugin)
+
+- OPTIONAL: [Install Jetbrains Mono Nerd Font](.fonts/)
 
 ## Installing (Only tested with .deb neovim install method)
 - Clone repo and move/rename directory to `<YOUR-HOME-PATH>/.config/nvim`

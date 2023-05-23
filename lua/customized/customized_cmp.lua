@@ -11,6 +11,12 @@ local has_words_before = function()
 end
 
 cmp.setup({
+	window = {
+		completion = cmp.config.window.bordered({
+			border = "double",
+			winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Cursorline:PmenuThumb,Search:None"
+		}),
+	},
 	--Add the cool lspkind icons
 	formatting = {
 		format = lspkind.cmp_format({
@@ -66,6 +72,16 @@ cmp.setup({
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+local pid = vim.fn.getpid()
+local omnisharp_bin ="/home/sully/Applications/omnisharp/run"
+
+-- Unity support
+require'lspconfig'.omnisharp.setup {
+	cmd = { omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) };
+	root_dir = require'lspconfig'.util.root_pattern("*.csproj", "*.sln")
+}
+
+
 -- Allows cmp to work without manually importing each server
 require("mason-lspconfig").setup_handlers({
 	function(server_name)
@@ -74,3 +90,21 @@ require("mason-lspconfig").setup_handlers({
 		})
 	end,
 })
+
+-- Redrafted unity support
+--[[
+local lspconfig = require "lspconfig"
+
+require'lspconfig'.omnisharp.setup {
+	cmd = { "mono", omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) },
+	filetypes = { "cs", "vb" },
+	init_options = {},
+	on_new_config = function(new_config, new_root_dir)
+		if new_root_dir then
+			table.insert(new_config.cmd, '-s')
+			table.insert(new_config.cmd, new_root_dir)
+			end
+		end,
+	root_dir = lspconfig.util.root_pattern("*.sln")
+}
+--]]
