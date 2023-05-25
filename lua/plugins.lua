@@ -40,6 +40,7 @@ packer.startup(function(use)
 	use("christoomey/vim-tmux-navigator")
 
 	-- Misc
+	use("https://github.com/arnamak/stay-centered.nvim")
 	use("https://github.com/startup-nvim/startup.nvim")
 	use("folke/neodev.nvim")
 	use("folke/todo-comments.nvim")
@@ -84,6 +85,8 @@ require("customized/customized_lspsignature")
 -- Because I have different preferences for different themes, this file contains commented out lists of other themes
 -- alongside the current theme that is being imported
 require("customized/themes")
+
+require("stay-centered").setup()
 
 require("neodev").setup()
 

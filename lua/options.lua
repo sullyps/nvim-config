@@ -19,9 +19,6 @@ vim.o.cursorline = true
 vim.o.splitright = true
 vim.o.termguicolors = true
 
-vim.api.nvim_create_autocmd("CursorMoved", { command = "normal zz" })
-vim.api.nvim_create_autocmd("CursorMoved", { command = "normal zz" })
-
 -- Personalized language shiftwidths to fit community standards / personal preference
 vim.cmd("autocmd FileType javascript set shiftwidth=2")
 vim.cmd("autocmd FileType typescriptreact set shiftwidth=2")
