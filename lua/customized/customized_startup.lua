@@ -25,7 +25,7 @@ local settings = {
             { " Find Word", "Telescope live_grep", "<leader>lg" },
             { " Recent Files", "Telescope oldfiles", "<leader>of" },
             { " File Browser", "Telescope file_browser", "<leader>fb" },
-            { " Colorschemes", "Telescope colorscheme", "<leader>cs" },
+            -- { " Colorschemes", "Telescope colorscheme", "<leader>cs" }, TODO: Add this back when more stable
             { " New File", "lua require'startup'.new_file()", "<leader>nf" },
         },
         highlight = "String",
@@ -39,7 +39,7 @@ local settings = {
         fold_section = false,
         title = "Footer",
         margin = 5,
-        content = { "startup.nvim" },
+        content = { "github.com/sullyps" },
         highlight = "Number",
         default_color = "",
         oldfiles_amount = 0,

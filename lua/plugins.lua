@@ -36,6 +36,9 @@ packer.startup(function(use)
 	use("nvim-lualine/lualine.nvim")
 	use("noib3/nvim-cokeline")
 
+	-- Tmux
+	use("christoomey/vim-tmux-navigator")
+
 	-- Misc
 	use("https://github.com/startup-nvim/startup.nvim")
 	use("folke/neodev.nvim")
@@ -121,4 +124,3 @@ require("nvim-treesitter.configs").setup({
 		enable = true,
 	},
 })
-

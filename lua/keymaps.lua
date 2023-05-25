@@ -29,6 +29,10 @@ map("n", "<Leader>t", ":TroubleToggle<CR>", opts)
 -- Format the current file
 map("n", "<Leader>fo", ":Format<CR>", opts)
 
+-- Auto recenter lines on enter and O
+map("n", "o", "o<C-c>zzi", opts)
+map("i", "<Enter>", "<C-c>", opts)
+
 -- Quick jumps
 map("n", "K", "5k", opts)
 map("v", "K", "5k", opts)
