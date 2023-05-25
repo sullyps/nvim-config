@@ -23,7 +23,7 @@ It's always a work in progress.
 - For Kitty terminal theme: run `kitty +kitten theme` and select 'Square' [View the theme here](https://github.com/dexpota/kitty-themes#square)
 - For Alacrity terminal theme: use [this](https://github.com/nyoom-engineering/oxocarbon-alacritty)
 
-## Installing (Only tested with .deb neovim install method)
+## Installing
 - Clone this repo and move/rename directory to `<YOUR-HOME-PATH>/.config/nvim`
 - ![Install packer according to their repository](https://github.com/wbthomason/packer.nvim):
 ```
