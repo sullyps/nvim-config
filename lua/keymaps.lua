@@ -17,6 +17,9 @@ map("n", "<Leader>c", ":bd<CR>", opts)
 -- Open find files pane
 map("n", "<Leader>ff", ":Telescope find_files<CR>", opts)
 
+-- Open highlights pane
+map("n", "<Leader>hi", ":Telescope highlights<CR>", opts)
+
 -- Goto definition
 map("n","gd", "<cmd>Lspsaga goto_definition<CR>", opts)
 

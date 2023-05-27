@@ -10,9 +10,10 @@ require('cokeline').setup({
 		    return "#78a9ff"
 	    end
 	    -- Not focused
-	    return get_hex("Comment", "guifg")
+	    return get_hex("Normal", "guibg")
     end,
-    bg = get_hex("ColorColumn", "guibg")
+    --bg = get_hex("ColorColumn", "guibg")
+    bg = "none"
   },
 
   components = {

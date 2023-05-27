@@ -40,8 +40,9 @@ packer.startup(function(use)
 	use("christoomey/vim-tmux-navigator")
 
 	-- Misc
-	use("https://github.com/arnamak/stay-centered.nvim")
-	use("https://github.com/startup-nvim/startup.nvim")
+	use("xiyaowong/transparent.nvim")
+	use("arnamak/stay-centered.nvim")
+	use("startup-nvim/startup.nvim")
 	use("folke/neodev.nvim")
 	use("folke/todo-comments.nvim")
 	use("BurntSushi/ripgrep") -- requirement for todo-comments
@@ -71,16 +72,16 @@ packer.startup(function(use)
 			ts_update()
 		end,
 	})
-
 	use("habamax/vim-godot")
 end)
 -- Require customized plugin configurations
-require("customized/customized_formatter")
-require("customized/customized_lualine")
-require("customized/customized_cokeline")
-require("customized/customized_lspsaga")
-require("customized/customized_cmp")
-require("customized/customized_lspsignature")
+require("customized.customized_formatter")
+require("customized.customized_lualine")
+require("customized.customized_cokeline")
+require("customized.customized_transparency")
+require("customized.customized_lspsaga")
+require("customized.customized_cmp")
+require("customized.customized_lspsignature")
 
 -- Because I have different preferences for different themes, this file contains commented out lists of other themes
 -- alongside the current theme that is being imported

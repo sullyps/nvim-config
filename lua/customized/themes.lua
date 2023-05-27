@@ -19,10 +19,11 @@ require("gruvbox").setup({
 		--]]
 	}
 })
+
 -- Enable oxocarbon theme with settings
 vim.cmd("colorscheme oxocarbon")
 vim.cmd("set laststatus=3")
-vim.cmd("hi TelescopeBorder guifg=#ffffff")
+vim.cmd("highlight TelescopeBorder guifg=#ffffff")
 
 -- Enable darcula theme
 -- vim.cmd("colorscheme dracula")
@@ -30,5 +31,7 @@ vim.cmd("hi TelescopeBorder guifg=#ffffff")
 -------------- GLOBAL STYLING OPTIONS --------------
 -- Popup menu settings
 vim.cmd("highlight PMenu guibg=#282828")
+--vim.cmd("highlight Normal guibg=none")
+--vim.cmd("highlight LineNr guibg=none")
 ----------------- KEEP UNCOMMENTED -----------------
 
