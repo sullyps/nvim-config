@@ -11,6 +11,9 @@ map("n", "<Leader>s", ":w<CR>", opts)
 -- Toggle file explorer
 map("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)
 
+-- Create new file
+map("n", "<Leader>nf", ":lua require'startup'.new_file()<CR>", opts)
+
 -- Close current buffer
 map("n", "<Leader>c", ":bd<CR>", opts)
 

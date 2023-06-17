@@ -40,6 +40,7 @@ packer.startup(function(use)
 	use("christoomey/vim-tmux-navigator")
 
 	-- Misc
+	use("lambdalisue/suda.vim")
 	use("xiyaowong/transparent.nvim")
 	use("arnamak/stay-centered.nvim")
 	use("startup-nvim/startup.nvim")
@@ -98,7 +99,12 @@ require("todo-comments").setup()
 require("pears").setup()
 
 -- Initalize nvim-tree plugin
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+	filters = {
+		dotfiles = false,
+		custom = { '.meta' }
+	}
+})
 
 -- Initalize GitSigns plugin
 require("gitsigns").setup()
